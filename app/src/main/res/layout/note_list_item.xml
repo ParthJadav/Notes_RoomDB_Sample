@@ -11,7 +11,7 @@
         android:layout_marginTop="@dimen/margin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@android:color/white"
+        app:cardBackgroundColor="@color/colorPrimaryLight"
         app:cardCornerRadius="0.2dp"
         app:cardElevation="2dp"
         app:cardPreventCornerOverlap="true">
@@ -21,7 +21,7 @@
             android:id="@+id/view_unlocked"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
+            android:background="@color/colorPrimaryLight"
             android:orientation="vertical">
 
 
@@ -39,7 +39,7 @@
                     android:id="@+id/item_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/colorWhite"
                     android:textSize="@dimen/font_medium"
                     app:textFontPath="fonts/montserrat_medium.otf" />
 
@@ -49,7 +49,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_small"
-                    android:textColor="@color/layout_item_desc"
+                    android:textColor="@color/colorWhite"
                     android:textSize="@dimen/font_small"
                     app:textFontPath="fonts/montserrat_light.otf" />
 

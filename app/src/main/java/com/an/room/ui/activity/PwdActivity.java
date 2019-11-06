@@ -35,6 +35,8 @@ public class PwdActivity extends AppCompatActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pwd);
 
+        AppUtils.setSystemBarColor(this);
+
         toolbarTitle = findViewById(R.id.title);
         toolbarTitle.setText(getString(R.string.toolbar_pwd));
 
@@ -57,7 +59,8 @@ public class PwdActivity extends AppCompatActivity implements View.OnClickListen
             pwdVisible = Boolean.TRUE;
             editPwd.setTransformationMethod(null);
             Drawable drawable = ContextCompat.getDrawable(getApplicationContext(), R.drawable.ic_pwd).mutate();
-            drawable.setColorFilter(new PorterDuffColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.line), PorterDuff.Mode.MULTIPLY));
+            drawable.setColorFilter(new PorterDuffColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.line),
+                    PorterDuff.Mode.MULTIPLY));
             editPwd.setCompoundDrawablesWithIntrinsicBounds(null,null, drawable, null);
 
         } else {

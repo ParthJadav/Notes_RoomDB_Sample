@@ -40,6 +40,8 @@ public class AddNoteActivity extends AppCompatActivity implements CompoundButton
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_note);
 
+        AppUtils.setSystemBarColor(this);
+
         textTime = findViewById(R.id.text_time);
         toolbarTitle = findViewById(R.id.title);
         editTitle = findViewById(R.id.edit_title);

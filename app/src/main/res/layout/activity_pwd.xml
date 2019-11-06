@@ -2,7 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@color/colorPrimaryDark">
 
 
     <include layout="@layout/view_toolbar"/>
@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
+        android:background="@color/colorPrimaryLight"
         android:orientation="vertical"
         android:layout_marginTop="@dimen/margin_xxlarge"
         android:paddingBottom="@dimen/margin_large"
@@ -32,13 +32,12 @@
             android:hint="@string/edit_pwd"
             android:imeOptions="actionDone"
             android:inputType="textPassword"
+            android:textColorHint="@color/colorWhite"
             android:paddingBottom="@dimen/padding_small"
-            android:textColor="@color/edit_title"
+            android:textColor="@color/colorWhite"
             android:textCursorDrawable="@drawable/cursor_black"
             android:textSize="@dimen/font_medium_large"
             app:editFontPath="fonts/montserrat_light.otf" />
-
-
 
     </LinearLayout>
 

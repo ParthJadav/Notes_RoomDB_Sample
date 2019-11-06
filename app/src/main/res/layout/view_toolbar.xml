@@ -4,7 +4,7 @@
     android:id="@+id/appBar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@android:color/white"
+    android:background="@color/colorPrimary"
     android:fitsSystemWindows="true"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
@@ -12,8 +12,8 @@
         android:id="@+id/collapsingToolbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/white"
-        android:backgroundTint="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
         android:fitsSystemWindows="true"
         app:contentScrim="?attr/colorPrimary"
         app:layout_scrollFlags="scroll|exitUntilCollapsed">
@@ -26,6 +26,7 @@
             android:layout_gravity="center_vertical|left"
             android:paddingBottom="@dimen/padding"
             android:paddingLeft="@dimen/padding_large"
+            android:tint="@color/colorWhite"
             android:paddingRight="@dimen/padding"
             android:paddingTop="@dimen/padding"
             android:src="@drawable/btn_done" />
@@ -40,7 +41,7 @@
             android:layout_marginTop="-2dp"
             android:gravity="center"
             android:text="@string/pwd_title"
-            android:textColor="@color/layout_title"
+            android:textColor="@color/colorWhite"
             android:textSize="@dimen/font_xlarge"
             app:textFontPath="fonts/montserrat_light.otf" />
 
@@ -56,7 +57,7 @@
             android:paddingRight="@dimen/margin_large"
             android:paddingTop="@dimen/padding"
             android:text="@string/btn_done"
-            android:textColor="@color/btn_done_color"
+            android:textColor="@color/colorWhite"
             android:textSize="@dimen/font_medium"
             app:textFontPath="fonts/montserrat_regular.otf" />
 
@@ -66,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="0.3dp"
             android:layout_marginTop="@dimen/margin_xxxxxxxxlarge"
-            android:background="@color/line" />
+            android:background="@color/colorWhite" />
 
 
     </android.support.design.widget.CollapsingToolbarLayout>

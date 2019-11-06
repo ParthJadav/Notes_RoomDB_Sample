@@ -17,6 +17,7 @@ import com.an.room.R;
 import com.an.room.model.Note;
 import com.an.room.repository.NoteRepository;
 import com.an.room.ui.adapter.NotesListAdapter;
+import com.an.room.util.AppUtils;
 import com.an.room.util.NavigatorUtils;
 import com.an.room.util.RecyclerItemClickListener;
 
@@ -39,6 +40,8 @@ public class NotesListActivity extends AppCompatActivity implements View.OnClick
         setContentView(R.layout.activity_note_list);
 
         noteRepository = new NoteRepository(getApplicationContext());
+
+        AppUtils.setSystemBarColor(this);
 
         recyclerView = findViewById(R.id.task_list);
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2 , StaggeredGridLayoutManager.VERTICAL));

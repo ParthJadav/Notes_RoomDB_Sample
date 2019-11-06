@@ -2,10 +2,15 @@ package com.an.room.util;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.Build;
 import android.os.Handler;
 import android.util.Base64;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
+
+import com.an.room.R;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -55,6 +60,15 @@ public class AppUtils {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static void setSystemBarColor(Activity act) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = act.getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            window.setStatusBarColor(act.getResources().getColor(R.color.colorBlack));
+        }
     }
 
     public static void showMessage(Context context, String message) {
